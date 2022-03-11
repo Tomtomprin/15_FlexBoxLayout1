@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <div class="container test1">
+        <div class="flex_parent test1">
+            <div class="flex_children test1 left">
+                test1
+            </div>
+            <div class="flex_children test1 center">
+                ・各Flex子要素に「flex:1」設定<br>・margin設定で、間隔を設定<br>・最初と最後の要素のmarginを調整
+            </div>
+            <div class="flex_children test1 right">
+                .flex_parentのクラスのdiv（ピンクセル）は無くても設定できそうだけど、あったほうが調整しやすそう。
+            </div>
+        </div>
+    </div>
+
+    <div class="container test2">
+        <div class="flex_parent test2">
+            <div class="flex_children test2 left">
+                test2
+            </div>
+            <div class="flex_children test2 center">
+                各Flex子要素に「width:400px(●●vwとかでも良い)」を設定して、justify-content:space-between設定でも整列できる。
+                ただし、親要素の幅が子要素幅合計より小さくなると、子要素がくっついてしまう。
+            </div>
+            <div class="flex_children test2 right">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+</html>

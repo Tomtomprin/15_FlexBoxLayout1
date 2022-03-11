@@ -1,0 +1,85 @@
+/* Step1 containerに、最大幅と、最低限確保したい（最大幅に至るまで定数の）パディングを設定 */
+.container.test1 {
+    height: 300px;
+    max-width: 1600px;
+    padding: 0 130px;
+    /* text-align: center; */
+}
+
+/* Step 2 flex_parentに、flexとmargin:autoを設定。 */
+.flex_parent.test1 {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 300px;
+    margin: auto;
+}
+
+/* Step 3 flex_childrenに、マージンを設定 */
+.flex_children.test1 {
+    height: 100px;
+    flex: 1;
+    margin: 0 20px;
+}
+
+/* Step 4 両端のパディングをなくす（nowrapの時だけ有効） */
+.flex_children.test1:first-of-type {
+    margin-left: 0px;
+}
+
+.flex_children.test1:last-of-type {
+    margin-right: 0px;
+}
+
+
+.container.test2 {
+    height: 300px;
+    max-width: 1600px;
+    padding: 0 130px;
+    /* text-align: center; */
+}
+
+/* Step 2 flex_parentに、flexとmargin:autoを設定。 */
+.flex_parent.test2 {
+    display: flex;
+    justify-content: space-between;
+
+    height: 300px;
+    margin: auto;
+}
+
+/* Step 3 flex_childrenに、マージンを設定 */
+.flex_children.test2 {
+    height: 100px;
+    width: 400px;
+    /* margin: 0 20px; */
+}
+
+
+
+
+
+
+/* このサンプルでは分かりやすく別で色などを設定 */
+.container {
+    background-color: lightblue;
+}
+
+.flex_parent {
+    background-color: lightpink;
+}
+
+.flex_children {
+    height: 100px;
+}
+
+.left {
+    background-color: lightyellow
+}
+
+.center {
+    background-color: rgb(207, 207, 183)
+}
+
+.right {
+    background-color: rgb(171, 171, 149)
+}
